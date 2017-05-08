@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BMI Calculator</title>
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Custom JavaScript -->
+        <script src="js/bmiscript.js"></script>
+    </head>
+    
+    <body id="banner_image">
+    <!--Header starts from here -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">    
+            <div class="navbar-header">
+					<a class="navbar-brand" href="index.html">Body Mass Index (BMI)</a>
+            </div>
+        </div>
+    </div>       
+    <!--Header ends here -->
+        
+        <!--BMI Entry Ends here -->
+            <div class="container " id="content">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                             <h2>Enter Required Data</h2>
+                            </div>
+                            <div class="panel-body">
+                                <form name="bmiForm">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="Weight In Kilograms" name="weight" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control"  placeholder="Height In cm" name="height" required>
+                                    </div>
+                                    
+                                    <input type="button" value="Submit" onClick="calculateBmi()" class="btn btn-success"><br/><br/>
+                                        Your BMI: <input type="text" name="bmi"  class="form-control">
+                                        This Means: <input type="text" name="meaning" class="form-control"><br />
+                                    <input type="reset" value="Reset" class="btn btn-danger" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <!--BMI Entry Ends here -->
+        
+        <!--Footer starts here-->
+        <footer class="text-center navbar-fixed-bottom site-footer ">
+            <div>
+                <p>Copyright &copy; RR-Creations 2017-18. All Rights Reserved  |  Contact Us: +91 9527692789</p>	
+            </div>
+        </footer>
+        <!--Footer ends here -->
+
+    </body>
+</html>
+-
